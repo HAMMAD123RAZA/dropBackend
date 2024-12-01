@@ -21,9 +21,7 @@ export const signUp=async(req,res)=>{
         res.status(200).json({message:'user created',newUser,token})
     } catch (error) {
         res.status(500).json({message:'error creating user',error})
-    }
-}
-
+    }}
 
 export const login=async(req,res)=>{
     const {email,password}=req.body
